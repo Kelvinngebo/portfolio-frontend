@@ -3,218 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelvin Patrick | Portfolio</title>
+    <meta name="description" content="Kelvin Patrick Mwazembe — Data Science Student, Data Analyst, and Python Developer portfolio.">
+    <title>Kelvin Patrick Mwazembe | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <nav>
-        <div class="logo">Kelvin Patrick</div>
-
+        <div class="logo">K.P. Mwazembe</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HOME / PERSONAL PROFILE -->
     <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1>Kelvin Patrick <span class="highlight">Mwazembe</span></h1>
+            <h2 class="hero-title">
+                <strong>Data Science Student</strong> |
+                <strong>Data Analyst</strong> |
+                <strong>Python Developer</strong>
+            </h2>
 
-        <div class="hero-text">
-            <h1>Hello, I'm Kelvin Patrick</h1>
-
-            <h2>Data Scientist | Data Analyst | Programer</h2>
-
-            <p>
-                I provide solutions to various problems by using
-                Data-driven approachs, I am also capable of analyzing data 
-                using R and Python programming languages. My best service 
-                is training machine learning Models, but also I can build
-                dashboards, websites and web applications.
+            <p class="hero-summary">
+                <strong>Bachelor of Data Science</strong> student with practical experience in
+                <strong>data analysis</strong>, <strong>statistical modeling</strong>,
+                <strong>econometric analysis</strong>, <strong>time series forecasting</strong>,
+                <strong>machine learning fundamentals</strong>, and <strong>web development</strong>.
+                Passionate about transforming data into <em class="accent-text">actionable insights</em>
+                and developing <em class="accent-text">data-driven solutions</em> for real-world challenges.
             </p>
 
-            <a href="#projects" class="btn">View Projects</a>
+            <div class="hero-highlights">
+                <span><i class="fa-solid fa-graduation-cap"></i> EASTC — Year 3</span>
+                <span><i class="fa-solid fa-location-dot"></i> Dar es Salaam, Tanzania</span>
+                <span><i class="fa-solid fa-chart-line"></i> Data-Driven Solutions</span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <button class="btn btn-secondary" type="button" onclick="downloadCV()">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </button>
+            </div>
         </div>
 
         <div class="hero-image">
-            <img src="passport.jpg" alt="profile">
+            <div class="image-frame">
+                <img
+                    src="passport.jpg"
+                    alt="Kelvin Patrick Mwazembe"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Kelvin+Patrick+Mwazembe&size=400&background=38bdf8&color=111827&bold=true'"
+                >
+            </div>
+            <p class="image-caption">Kelvin Patrick Mwazembe</p>
         </div>
-        
-        <button class="btn" onclick="downloadCV()">Download CV</button>
-
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-
         <h2 class="section-title">About Me</h2>
+        <p class="section-intro">
+            A dedicated <strong>data professional in training</strong>, combining
+            <strong>statistical rigor</strong> with modern programming and
+            <strong>cloud deployment</strong> skills to deliver meaningful analytical outcomes.
+        </p>
 
         <div class="about-container">
-
             <div class="about-card">
                 <i class="fa-solid fa-user-graduate"></i>
-
-                <h3>Education</h3>
-
+                <h3>Academic Background</h3>
                 <p>
-                    Third Year Data Science student at
-                    Eastern Africa Statistical Training Centre (EASTC).
+                    Third-year <strong>Bachelor of Data Science</strong> student at the
+                    <strong>Eastern Africa Statistical Training Centre (EASTC)</strong>, building expertise
+                    across <strong>statistics</strong>, <strong>analytics</strong>, and <strong>computing</strong>.
                 </p>
             </div>
 
             <div class="about-card">
-                <i class="fa-solid fa-brain"></i>
-
-                <h3>Research Interests</h3>
-
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h3>Analytical Focus</h3>
                 <p>
-                    Machine Learning, Fraud Detection,
-                    Big Data, Cloud Computing, 
-                    Data Security, Data Storage
-                    and Intelligent Systems.
+                    Experienced in <strong>data analysis</strong>, <strong>econometric analysis</strong>,
+                    <strong>time series forecasting</strong>, <strong>statistical modeling</strong>, and
+                    <strong>machine learning fundamentals</strong> for research and applied projects.
                 </p>
             </div>
 
             <div class="about-card">
-                <i class="fa-solid fa-code"></i>
-
-                <h3>Development</h3>
-
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Technical Development</h3>
                 <p>
-                    Building modern web systems, Dashboards,
-                    APIs, and AI-powered applications.
+                    Proficient in <strong>Python</strong>, <strong>R</strong>, <strong>SQL</strong>, and web
+                    technologies including <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>,
+                    and <strong>Flask</strong> — with hands-on deployment using <strong>Vercel</strong> and <strong>Render</strong>.
                 </p>
             </div>
-
         </div>
 
+        <div class="strengths-block">
+            <h3 class="subsection-title">Core Strengths</h3>
+            <div class="tag-list">
+                <span>Data Analysis</span>
+                <span>Statistical Modeling</span>
+                <span>Time Series Forecasting</span>
+                <span>Research & Academic Analysis</span>
+                <span>Python Programming</span>
+                <span>Problem Solving</span>
+                <span>Machine Learning Fundamentals</span>
+                <span>Web Development</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUALIFICATIONS -->
+    <section class="qualifications" id="qualifications">
+        <h2 class="section-title">Qualifications & Education</h2>
+        <p class="section-intro">
+            Formal education and applied training in <strong>data science</strong>,
+            <strong>statistics</strong>, and <strong>cloud technologies</strong>.
+        </p>
+
+        <div class="qualifications-timeline">
+            <div class="qualification-item">
+                <span class="qualification-year">In Progress</span>
+                <div class="qualification-content">
+                    <h3>Bachelor of Data Science — Year 3</h3>
+                    <p class="qualification-institution">Eastern Africa Statistical Training Centre (EASTC)</p>
+                    <p>
+                        Comprehensive training in <strong>data analysis</strong>, <strong>statistical methods</strong>,
+                        <strong>programming</strong>, <strong>machine learning fundamentals</strong>, and
+                        research-oriented project work.
+                    </p>
+                </div>
+            </div>
+
+            <div class="qualification-item">
+                <span class="qualification-year">Applied</span>
+                <div class="qualification-content">
+                    <h3>Econometric & Time Series Analysis</h3>
+                    <p class="qualification-institution">Academic coursework & projects</p>
+                    <p>
+                        <strong>ARIMA models</strong>, <strong>Box-Jenkins methodology</strong>,
+                        <strong>cointegration testing</strong>, and forecasting techniques applied using
+                        <strong>Stata</strong> and supporting statistical tools.
+                    </p>
+                </div>
+            </div>
+
+            <div class="qualification-item">
+                <span class="qualification-year">Cloud</span>
+                <div class="qualification-content">
+                    <h3>Full-Stack Cloud Deployment</h3>
+                    <p class="qualification-institution">Vercel · Render · Flask</p>
+                    <p>
+                        Design and deployment of production-ready portfolio applications with a
+                        static frontend on Vercel and a REST API backend hosted on Render.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- SKILLS -->
     <section class="skills" id="skills">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-intro">
+            Technical competencies and tools used across <strong>data science</strong>,
+            <strong>analytics</strong>, and <strong>software development</strong> projects.
+        </p>
 
-        <h2 class="section-title">Technical Skills</h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <i class="fa-brands fa-python"></i>
-                <h3>Python</h3>
+        <h3 class="subsection-title">Technical Skills</h3>
+        <div class="skills-detailed">
+            <div class="skill-detail-card">
+                <i class="fa-solid fa-database"></i>
+                <h4>Data Analysis</h4>
+                <p>Cleaning, exploration, and insight generation from structured datasets.</p>
             </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-chart-simple"></i>
-                <h3>R Programming</h3>
+            <div class="skill-detail-card">
+                <i class="fa-solid fa-chart-pie"></i>
+                <h4>Data Visualization</h4>
+                <p>Clear visual communication of trends, patterns, and analytical findings.</p>
             </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-cloud"></i>
-                <h3>Cloud Computing</h3>
+            <div class="skill-detail-card">
+                <i class="fa-solid fa-square-root-variable"></i>
+                <h4>Statistical Analysis</h4>
+                <p>Hypothesis testing, inference, and rigorous quantitative evaluation.</p>
             </div>
-
-            <div class="skill-card">
+            <div class="skill-detail-card">
                 <i class="fa-solid fa-chart-line"></i>
-                <h3>Data Science</h3>
+                <h4>Econometric Analysis</h4>
+                <p>Modeling relationships between economic and social variables.</p>
             </div>
-
-            <div class="skill-card">
+            <div class="skill-detail-card">
+                <i class="fa-solid fa-clock"></i>
+                <h4>Time Series Forecasting</h4>
+                <p>ARIMA, Box-Jenkins, and trend projection for temporal data.</p>
+            </div>
+            <div class="skill-detail-card">
                 <i class="fa-solid fa-robot"></i>
-                <h3>Machine Learning</h3>
+                <h4>Machine Learning Fundamentals</h4>
+                <p>Supervised learning, classification, and predictive modeling basics.</p>
             </div>
-
-            <div class="skill-card">
+            <div class="skill-detail-card">
+                <i class="fa-solid fa-broom"></i>
+                <h4>Data Cleaning & Preprocessing</h4>
+                <p>Handling missing values, outliers, and feature preparation.</p>
+            </div>
+            <div class="skill-detail-card">
+                <i class="fa-brands fa-python"></i>
+                <h4>Python Programming</h4>
+                <p>Analytics, automation, ML pipelines, and API development with Flask.</p>
+            </div>
+            <div class="skill-detail-card">
+                <i class="fa-solid fa-r"></i>
+                <h4>R Programming</h4>
+                <p>Statistical computing, visualization, and research workflows.</p>
+            </div>
+            <div class="skill-detail-card">
+                <i class="fa-solid fa-table"></i>
+                <h4>SQL</h4>
+                <p>Querying, filtering, and managing relational data stores.</p>
+            </div>
+            <div class="skill-detail-card">
                 <i class="fa-solid fa-globe"></i>
-                <h3>Web Development</h3>
+                <h4>Web Development</h4>
+                <p>HTML, CSS, JavaScript, and Flask for interactive applications.</p>
             </div>
-
         </div>
 
+        <h3 class="subsection-title tools-heading">Tools & Technologies</h3>
+        <div class="tools-grid">
+            <div class="tool-chip"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="tool-chip"><i class="fa-solid fa-r"></i> R</div>
+            <div class="tool-chip"><i class="fa-solid fa-chart-bar"></i> Stata</div>
+            <div class="tool-chip"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</div>
+            <div class="tool-chip"><i class="fa-solid fa-code"></i> Visual Studio Code</div>
+            <div class="tool-chip"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="tool-chip"><i class="fa-brands fa-github"></i> GitHub</div>
+            <div class="tool-chip"><i class="fa-solid fa-flask"></i> Flask</div>
+            <div class="tool-chip"><i class="fa-brands fa-ubuntu"></i> Ubuntu Linux</div>
+            <div class="tool-chip"><i class="fa-solid fa-cloud"></i> Vercel</div>
+            <div class="tool-chip"><i class="fa-solid fa-server"></i> Render</div>
+            <div class="tool-chip"><i class="fa-solid fa-network-wired"></i> Cisco Packet Tracer</div>
+        </div>
     </section>
 
     <!-- PROJECTS -->
     <section class="projects" id="projects">
-
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-intro">
+            Selected <strong>academic</strong> and <strong>technical projects</strong> demonstrating
+            analytical depth and practical implementation.
+        </p>
 
         <div class="project-grid">
-
-            <div class="project-card">
-                <h3>Fraud Advertisement Detection System</h3>
-
+            <article class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span class="project-tag">Machine Learning</span>
+                <h3>Fraudulent Online Advertisement Detection System</h3>
                 <p>
-                    Machine learning system for detecting fraudulent
-                    online advertisements in Tanzania.
+                    Developing a machine learning solution to identify fraudulent online advertisements
+                    in Tanzanian online marketplaces, combining data preprocessing, feature engineering,
+                    and predictive modeling.
                 </p>
-            </div>
+            </article>
 
-            <div class="project-card">
-                <h3>NECTA Data Analysis</h3>
-
+            <article class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-school"></i></div>
+                <span class="project-tag">Data Analysis</span>
+                <h3>NECTA Examination Performance Analysis</h3>
                 <p>
-                    Large-scale educational performance analysis
-                    using Python and statistical techniques.
+                    Analyzed secondary school examination data to evaluate student performance,
+                    regional trends, and school outcomes using Python and statistical techniques.
                 </p>
-            </div>
+            </article>
 
-            <div class="project-card">
-                <h3>Water Supply Reliability Research</h3>
-
+            <article class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-chart-area"></i></div>
+                <span class="project-tag">Econometrics</span>
+                <h3>Time Series Forecasting & Econometric Analysis</h3>
                 <p>
-                    Data-driven assessment of urban water reliability
-                    in Dar es Salaam.
+                    Applied ARIMA models, Box-Jenkins methodology, cointegration testing, and forecasting
+                    techniques using Stata for rigorous temporal and economic data analysis.
                 </p>
-            </div>
+            </article>
 
+            <article class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-laptop"></i></div>
+                <span class="project-tag">Cloud · Full Stack</span>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    Designed and deployed a professional portfolio website using HTML, CSS, JavaScript,
+                    Flask, Vercel (frontend), and Render (backend API) — demonstrating end-to-end cloud workflow.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <span class="project-tag">Networking</span>
+                <h3>Network Design & Configuration Project</h3>
+                <p>
+                    Designed and configured networks involving subnetting, DHCP configuration,
+                    IP planning, and server connectivity using Cisco Packet Tracer.
+                </p>
+            </article>
         </div>
-
     </section>
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-
         <h2 class="section-title">Contact Me</h2>
+        <p class="section-intro">
+            Have a <strong>data challenge</strong>, <strong>research idea</strong>, or
+            <strong>professional opportunity</strong> in mind? I welcome thoughtful conversations
+            where <em class="accent-text">analysis meets action</em> — send a message and let's explore what we can build together.
+        </p>
 
-        <div class="contact-container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p><i class="fa-solid fa-user"></i> <strong>Kelvin Patrick Mwazembe</strong></p>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:kelvinpatrickngebo2@gmail.com"><strong>kelvinpatrickngebo2@gmail.com</strong></a></p>
 
-            <p><i class="fa-solid fa-envelope"></i> kelvinpatrickngebo2@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> 0786328785 </p>
-            <p><i class="fa-solid fa-location-dot"></i> Dar es Salaam</p>
+                <div class="contact-phone-block">
+                    <p class="contact-row">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="contact-phone-details">
+                            <a href="tel:+255786328785" class="phone-number"><strong>+255 786 328 785</strong></a>
+                            <a href="https://wa.me/255786328785" class="whatsapp-badge" target="_blank" rel="noopener" title="Chat on WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Available on <strong>WhatsApp</strong></span>
+                            </a>
+                        </span>
+                    </p>
+                </div>
 
-        <!-- ADD THIS FORM BELOW -->
+                <p><i class="fa-solid fa-location-dot"></i> <strong>Dar es Salaam</strong>, Tanzania</p>
+            </div>
+
             <form id="contactForm">
-
                 <input type="text" id="name" placeholder="Your Name" required>
-
                 <input type="email" id="email" placeholder="Your Email" required>
-
                 <textarea id="message" placeholder="Your Message" required></textarea>
-
-                <button class="btn" type="submit">Send Message</button>
-
+                <button class="btn btn-primary" type="submit">Send Message</button>
             </form>
-
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Kelvin Patrick | Cloud Portfolio Website</p>
+        <p>© 2026 Kelvin Patrick Mwazembe | Cloud Portfolio Website</p>
+        <p class="footer-api">
+            <a href="https://portfolio-backend-twnd.onrender.com/" target="_blank" rel="noopener">API Status</a>
+            ·
+            <a href="https://portfolio-backend-twnd.onrender.com/messages" target="_blank" rel="noopener">View Messages (Admin)</a>
+        </p>
     </footer>
-    <section class="admin">
-        <h2>Admin</h2>
-        <a href="https://portfolio-backend-twnd.onrender.com/messages" target="_blank">
-        View Messages
-        </a>
-    </section>
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>

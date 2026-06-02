@@ -64,6 +64,6 @@ function showPopup(text, type) {
 function downloadCV() {
     const link = document.createElement("a");
     link.href = "cv.pdf"; // put your CV file in project folder
-    link.download = "Kelvin_Patrick_CV.pdf";
+    link.download = "Kelvin_Patrick_Mwazembe_CV.pdf";
     link.click();
 }
