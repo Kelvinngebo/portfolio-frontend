@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kelvin Patrick Mwazembe — Data Science Student, Data Analyst, and Python Developer portfolio.">
+    <link rel="canonical" href="https://portfolio-frontend-lime-nine.vercel.app/">
+    <meta property="og:url" content="https://portfolio-frontend-lime-nine.vercel.app/">
+    <meta property="og:title" content="Kelvin Patrick Mwazembe | Portfolio">
+    <meta property="og:description" content="Data Science Student, Data Analyst, and Python Developer — portfolio hosted on Vercel with Flask API on Render.">
     <title>Kelvin Patrick Mwazembe | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -11,6 +15,13 @@
 </head>
 
 <body>
+
+    <div class="floating-bg" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape shape-4"></span>
+    </div>
 
     <nav>
         <div class="logo">K.P. Mwazembe</div>
@@ -25,9 +36,9 @@
     </nav>
 
     <!-- HOME / PERSONAL PROFILE -->
-    <section class="hero" id="home">
+    <section class="hero animate-on-scroll" id="home">
         <div class="hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
+            <p class="hero-greeting wave-text">Hello, I'm</p>
             <h1>Kelvin Patrick <span class="highlight">Mwazembe</span></h1>
             <h2 class="hero-title">
                 <strong>Data Science Student</strong> |
@@ -45,9 +56,18 @@
             </p>
 
             <div class="hero-highlights">
-                <span><i class="fa-solid fa-graduation-cap"></i> EASTC — Year 3</span>
-                <span><i class="fa-solid fa-location-dot"></i> Dar es Salaam, Tanzania</span>
-                <span><i class="fa-solid fa-chart-line"></i> Data-Driven Solutions</span>
+                <span class="float-chip"><i class="fa-solid fa-graduation-cap"></i> EASTC — Year 3</span>
+                <span class="float-chip"><i class="fa-solid fa-location-dot"></i> Dar es Salaam, Tanzania</span>
+                <span class="float-chip"><i class="fa-solid fa-chart-line"></i> Data-Driven Solutions</span>
+            </div>
+
+            <div id="backendStatus" class="backend-status checking" role="status" aria-live="polite">
+                <span class="status-dot" aria-hidden="true"></span>
+                <div class="status-text-wrap">
+                    <p id="backendStatusText" class="status-main">Connecting to backend…</p>
+                    <p id="backendPortfolioName" class="status-portfolio"></p>
+                    <p id="backendProfileLine" class="status-profile"></p>
+                </div>
             </div>
 
             <div class="hero-actions">
@@ -59,8 +79,8 @@
             </div>
         </div>
 
-        <div class="hero-image">
-            <div class="image-frame">
+        <div class="hero-image float-gentle">
+            <div class="image-frame pulse-ring">
                 <img
                     src="passport.jpg"
                     alt="Kelvin Patrick Mwazembe"
@@ -72,7 +92,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about" id="about">
+    <section class="about animate-on-scroll" id="about">
         <h2 class="section-title">About Me</h2>
         <p class="section-intro">
             A dedicated <strong>data professional in training</strong>, combining
@@ -128,7 +148,7 @@
     </section>
 
     <!-- QUALIFICATIONS -->
-    <section class="qualifications" id="qualifications">
+    <section class="qualifications animate-on-scroll" id="qualifications">
         <h2 class="section-title">Qualifications & Education</h2>
         <p class="section-intro">
             Formal education and applied training in <strong>data science</strong>,
@@ -177,7 +197,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="skills" id="skills">
+    <section class="skills animate-on-scroll" id="skills">
         <h2 class="section-title">Skills & Technologies</h2>
         <p class="section-intro">
             Technical competencies and tools used across <strong>data science</strong>,
@@ -261,7 +281,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="projects" id="projects">
+    <section class="projects animate-on-scroll" id="projects">
         <h2 class="section-title">Featured Projects</h2>
         <p class="section-intro">
             Selected <strong>academic</strong> and <strong>technical projects</strong> demonstrating
@@ -323,7 +343,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact" id="contact">
+    <section class="contact animate-on-scroll" id="contact">
         <h2 class="section-title">Contact Me</h2>
         <p class="section-intro">
             Have a <strong>data challenge</strong>, <strong>research idea</strong>, or
@@ -365,9 +385,11 @@
     <footer>
         <p>© 2026 Kelvin Patrick Mwazembe | Cloud Portfolio Website</p>
         <p class="footer-api">
-            <a href="https://portfolio-backend-twnd.onrender.com/" target="_blank" rel="noopener">API Status</a>
+            <a id="footerLiveSite" href="https://portfolio-frontend-lime-nine.vercel.app/" target="_blank" rel="noopener">Live Portfolio</a>
             ·
-            <a href="https://portfolio-backend-twnd.onrender.com/messages" target="_blank" rel="noopener">View Messages (Admin)</a>
+            <a id="footerApiLink" href="https://portfolio-backend-twnd.onrender.com/" target="_blank" rel="noopener">API</a>
+            ·
+            <a id="footerAdminLink" href="https://portfolio-backend-twnd.onrender.com/messages" target="_blank" rel="noopener">View Messages (Admin)</a>
         </p>
     </footer>
 
